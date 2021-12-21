@@ -1,0 +1,11 @@
+---
+- hosts: 172.30.34.206
+  gather_facts: no
+
+  tasks:
+    - ios_command:
+        commands: show version
+      register: facts
+
+    - debug:
+        var: facts
