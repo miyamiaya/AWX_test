@@ -1,4 +1,3 @@
----
 - hosts: 172.30.34.206
   gather_facts: no
 
